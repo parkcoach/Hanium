@@ -41,8 +41,15 @@
 
       }
 
+      #login_form_left{
+        float:left;
+        width:70%;
+      }
+
       #login_form{
-        float: left;
+        float:left;
+        height:100%;
+        margin: 0 auto;
       }
     </style>
 
@@ -83,12 +90,12 @@
         <!-- /.container-fluid -->
     </nav>
 
-                
+
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <br><br><br><br>
+              
                     <h2 class="section-heading">로그인</h2>
                     <hr class="light"><br>
 
@@ -105,12 +112,13 @@
                       </tr>
                     </table></p> -->
 
+
                 <div id="login_form">
                     <form action="">
                       <p>
                         <table>
                           <tr>
-                            <td><img src="img/id.jpg" height="20px" width="20px" alt="" title=""></td>
+                            <td id="login_pic"><img src="img/id.jpg" height="20px" width="20px" alt="" title=""></td>
                             <td><input type="text" name="id" value="아이디/이메일"></input></td>
                           </tr>
                         </table>
@@ -123,6 +131,7 @@
                           </tr>
                         </table>
                       </p>
+                      <p><input type="button" name="login_button" value="로그인"></input></p>
                     </form>
                 </div>
 
