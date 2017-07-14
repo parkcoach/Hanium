@@ -73,6 +73,10 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <div id="header">
+
+    </div>
+
 <div id="form_signup">
     <form class="form-horizontal" role="form" method="post" action="javascript:alert( 'success!' );">
 
@@ -123,10 +127,16 @@
              <div class="form-group">
                  <label for="inputPhoneNumber" class="col-lg-2 control-label">성별</label>
                  <div class="col-lg-10">
-                     <select class="form-control" id="gender">
+                     <!-- <select class="form-control" id="gender">
                          <option value="M">남</option>
                          <option value="F">여</option>
-                     </select>
+                     </select> -->
+                     <label class="radio-inline">
+                         <input type="radio" id="genderReceiveYn" name="genderReceiveYn" value="남자" checked> 남자
+                     </label>
+                     <label class="radio-inline">
+                         <input type="radio" id="genderReceiveYn" name="genderReceiveYn" value="여자"> 여자
+                     </label>
                  </div>
              </div>
              <div class="form-group">
