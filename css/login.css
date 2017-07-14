@@ -50,6 +50,10 @@ body {
   height: 70px;
 }
 
+#forgot{
+  color: white;
+}
+
 input {
 	width: 100%;
 	margin-bottom: 10px;
