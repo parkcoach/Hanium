@@ -9,25 +9,79 @@ body{
   background-color:#0092ff;
 }
 
+#form_left{
+  width:19%;
+  height:850px;
+  float: left;
+}
+
+#form_center{
+  width:62%;
+  height:850px;
+  float:left;
+}
+
+#form_right{
+  width:19%;
+  height:850px;
+  float: left;
+}
 
 #form_signup{
   margin-top: 150px;
-  padding-right: 20%;
-  padding-left: 20%;
   background-repeat: no-repeat;
-  position: relative;
+  position:relative;
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  width:100%;
+  width:62%;
   height:850px;
   margin-bottom: 30px;
+  float:left;
+}
+#id{
+  width:250px;
+  height:40px;
+  position:relative;
+}
+#password{
+  width:250px;
+  height:40px;
+}
+#passwordCheck{
+  width:250px;
+  height:40px;
+}
+#name{
+  width:250px;
+  height:40px;
+}
+#nickname{
+  width:250px;
+  height:40px;
+}
+#email{
+  width:250px;
+  height:40px;
+}
+#phoneNumber{
+  width:250px;
+  height:40px;
+}
+
+#button{
+  width:250px;
+  height:40px;
+  background-color: #0092ff;
+  color:white;
 }
 
 footer{
   border-top: 1px solid #D5D8DC;
-  padding-top: 25px;
+  padding-top: 40px;
+  width: 100%;
+  float:left;
 }
