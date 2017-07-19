@@ -24,6 +24,8 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/treat.css" rel="stylesheet">
+    <script src="treat.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,24 +74,20 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">진료</h2>
-                    <hr class="light">
-                    <p class="text-faded">진료를 위한 화면</p>
+  <div id="treat">
+    <div id="wrapper">
+      <fieldset>
+        <form>
+          <input type="button" value="피부과" onClick="changeFrame()">
+          <input type="button" value="비뇨기과" onClick="changeFrame()">
+          <input type="button" value="안과" onClick="changeFrame()">
+        </form>
+      </fieldset>
+    </div>
+  </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <br>
-    <br>
-    <br>
-
-        <footer>
+        <!-- <footer>
               <div class="container" style="font-family:Arial;">
                   <div class="row">
                       <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -117,7 +115,7 @@
                   </div>
               </div>
               <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-          </footer>
+          </footer> -->
 
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>
