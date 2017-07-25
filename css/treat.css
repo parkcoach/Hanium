@@ -1,4 +1,7 @@
-
+body{
+  background: linear-gradient(45deg, #ffccff, #0092ff);
+  background: -webkit-linear-gradient(45deg, #ffccff, #0092ff);
+}
 /*Contact sectiom*/
 .content-header{
   font-family: 'sans-serif', cursive;
