@@ -1,4 +1,4 @@
-html { width: 100%; height:100%;}
+html { width: 100%; height:100%; }
 
 body {
 
@@ -35,13 +35,16 @@ body {
     background-position: center;
     background-image: url('../img/login_pic2.jpg');
     width:100%;
-    height:900px;
-    margin-bottom: 30px;
+    height:100%;
+
 }
 
 #button{
   margin-top: 10px;
   height:45px;
+  background-color: transparent;
+  color:white;
+  border: 2px solid #f0f0f5;
 }
 
 #footer{

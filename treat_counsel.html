@@ -88,26 +88,45 @@
 			</div>
 			<div class="contact-section">
 			<div class="container">
-				<form>
+				<form action="" method="post">
 					<div class="col-md-6 form-line">
 			  			<div class="form-group">
 			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
+					    	<input type="text" class="form-control" id="" placeholder="이름을 입력하세요">
 				  		</div>
 				  		<div class="form-group">
 					    	<label for="exampleInputEmail">Email Address</label>
-					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder="이메일을 입력하세요">
 					  	</div>
 					  	<div class="form-group">
 					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter mobile no.">
+					    	<input type="tel" class="form-control" id="telephone" placeholder="휴대폰 번호를 입력하세요">
+			  			</div>
+              <div class="form-group">
+					    	<label for="telephone">Select Doctor</label><br>
+					    	<select name="doctor" id="select_doctor" style="color:#a3a3c2">
+                  <option value="">&nbsp &nbsp 의사선택</option>
+                  <option value="">피부과</option>
+                  <option value="">비뇨기과</option>
+                  <option value="">이비인후과</option>
+                </select>
 			  			</div>
 			  		</div>
 			  		<div class="col-md-6">
 			  			<div class="form-group">
-			  				<label for ="description"> Message</label>
-			  			 	<textarea  class="form-control" id="description" placeholder="Enter Your symptom"></textarea>
+			  				<label for ="description"> Symptom</label>
+			  			 	<textarea  class="form-control" id="description" placeholder="증상을 상세히 적어주세요"></textarea>
 			  			</div>
+
+              <!-- 파일업로드 -->
+              <label for="telephone">Select Symptom Image</label><br>
+              <div class="filebox bs3-primary">
+                            <input class="upload-name" value="증상 이미지 선택" disabled="disabled">
+
+                            <label for="ex_filename">사진 업로드</label>
+                          <input type="file" id="ex_filename" class="upload-hidden">
+                        </div>
+
 			  			<div>
 
 			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
@@ -119,7 +138,21 @@
 		</section>
 
 
+      <script> /*파일 업로드 부분 js*/
+          $(document).ready(function(){
+          var fileTarget = $('.filebox .upload-hidden');
 
+            fileTarget.on('change', function(){
+              if(window.FileReader){
+                    var filename = $(this)[0].files[0].name;
+                } else {
+                  var filename = $(this).val().split('/').pop().split('\\').pop();
+              }
+
+              $(this).siblings('.upload-name').val(filename);
+          });
+        });
+      </script>
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>
 
