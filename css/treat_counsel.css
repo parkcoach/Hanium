@@ -11,11 +11,12 @@ body{
 
 .section-content{
   text-align: center;
-
 }
 
 .container{
-  border: 1px solid gray;
+  border: 2px solid #f0f0f5;
+  border-radius: 10px;
+  padding: 25px;
 }
 #contact{
 

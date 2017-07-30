@@ -24,7 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-    <link href="css/treat_main.css" rel="stylesheet">
+    <link href="css/treat_counsel.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
    	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
@@ -83,16 +83,39 @@
 
     <section id="contact">
 			<div class="section-content">
-				<h1 class="section-header" style="font-family:Arial; font-size:36px"><strong>Dr.Dream에게 <span class="content-header wow fadeIn " style="font-family:Arial; font-size:36px" data-wow-delay="0.2s" data-wow-duration="2s"> 진료받으세요</span></strong></h1>
-				<h3>진료 상담을 작성하면 담당 의사에게 원격진료 및 상담을 받을 수 있습니다</h3>
+				<h1 class="section-header" style="font-family:Arial; font-size:40px"><strong><span class="content-header wow fadeIn " style="font-family:Arial; font-size:36px" data-wow-delay="0.2s" data-wow-duration="2s">진료상담</span></strong></h1>
+				<h3>상담 내용과 증상 사진을 업로드하면 초기진단 및 상담을 받을 수 있습니다</h3>
 			</div>
 			<div class="contact-section">
 			<div class="container">
-            <input type="image" id="treat_chart" src="img/treat_pic1.jpg">
-            <input type="image" id="treat_counsel" src="img/treat_pic2.jpg" onclick="location.href='treat_counsel.html'">
-            <input type="image" id="treat_remote" src="img/treat_pic3.jpg">
-      </div>
-      </div>
+				<form>
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="telephone">Mobile No.</label>
+					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter mobile no.">
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" id="description" placeholder="Enter Your symptom"></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  			</div>
+
+					</div>
+				</form>
+			</div>
 		</section>
 
 
