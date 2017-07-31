@@ -26,12 +26,6 @@
     <link href="css/creative.min.css" rel="stylesheet">
     <link href="css/analysis.css" rel="stylesheet">
 
-    <script>
-      function changeFrame(url){
-        document.getElementById("main_frame").src = url;
-      }
-    </script>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,7 +51,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="treat_main.html">진료</a>
+                        <a class="page-scroll" href="treat_main.html">원격진료</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="analysis.html">증상분석</a>
@@ -79,18 +73,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-  <div id="treat">
-      <div id="button_wrap">
-        <form>
-          <input type="button" id="dc1" value="피부과" onClick="changeFrame('html/checkbox1.html')">
-          <input type="button" id="dc2" value="비뇨기과" onClick="changeFrame('html/checkbox2.html')">
-          <input type="button" id="dc3" value="안과" onClick="changeFrame('html/checkbox3.html')">
-        </form>
-      </div>
-      <fieldset>
-        <iframe src="html/checkbox1.html" width="600" height="500" frameborder="0" border="0" name="main_frame" id="main_frame"></iframe>
-      </fieldset>
-  </div>
 
 
         <!-- <footer>

@@ -2,10 +2,12 @@
 body{
   width:100%;
   height:100%;
-  background: -webkit-linear-gradient(bottom left, #0099ff 0%, #cc66ff 94%);
-  background: -o-linear-gradient(bottom left, #0099ff 0%, #cc66ff 94%);
   background: linear-gradient(to top right, #0099ff 0%, #cc66ff 94%);
+  -webkit-background-size: 200%;
+  -o-background-size: 200%;
+  -moz-background-size: 200%;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 #header{

@@ -1,7 +1,8 @@
 body{
   width:100%;
   height:100%;
-  background-color: #0092ff;
+  background: linear-gradient(45deg, #ffccff, #0092ff);
+  background: -webkit-linear-gradient(45deg, #ffccff, #0092ff);
 }
 
 #treat{
