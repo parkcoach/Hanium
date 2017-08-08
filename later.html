@@ -78,39 +78,26 @@
   <h3 style="color:#f0f0f5">상담후기를 작성해주시면 더 나은 서비스를 제공하는데 도움이 됩니다</h3>
 </div>
 
-<div id="write_table">
-<table summary="글쓰기 전체 테이블">
-    <form name="BoardWriteForm" method="post" action="Board_Write_action.jsp"
-          onsubmit="return boardWriteCheck();" >
-
-        <colgroup>
-            <col width="20%">
-            <col width="80%">
-        </colgroup>
-
-
+            <div id="write_table">
+              <form action="주소" method="get">
                 <textarea name=content id="write_text" rows ="6" cols="78" placeholder="진료는 만족스러우셨나요?"></textarea>
-                  <div id="table_down">
                     <div class="stars">
-                        <form action="">
-                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <input class="star star-5" id="star-5" type="radio" name="star5"/>
                             <label class="star star-5" for="star-5"></label>
-                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <input class="star star-4" id="star-4" type="radio" name="star4"/>
                             <label class="star star-4" for="star-4"></label>
-                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <input class="star star-3" id="star-3" type="radio" name="star3"/>
                             <label class="star star-3" for="star-3"></label>
-                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <input class="star star-2" id="star-2" type="radio" name="star2"/>
                             <label class="star star-2" for="star-2"></label>
-                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <input class="star star-1" id="star-1" type="radio" name="star1"/>
                             <label class="star star-1" for="star-1"></label>
-                        </form>
+                            <div id="submit_div">
+                            <input id="submit_button" type="submit" value="등록">
+                          </div>
                     </div>
-
-                  <input id="submit_button" type="submit" value="등록">
-                </div>
-    </form>
-</table>
-</div>
+            </form>
+            </div>
 
 
 <!-- jQuery -->

@@ -84,46 +84,52 @@
 
 <div id="form_signup">
 
-         <form class="form-horizontal" id="form_sign" role="form" method="post" action="javascript:alert( 'success!' );">
+         <form class="form-horizontal" id="form_sign" role="form" method="post" action="주소">
                  <fieldset>
                   <div class="form-group" id="divId">
 
                       <div class="col-lg-10" id="formid">
-                <strong id="strong">아이디</strong><input type="text" class="form-control onlyAlphabetAndNumber" id="id" data-rule-required="true" placeholder="아이디" maxlength="30">
+                <label for="id"><strong id="strong">아이디</strong></label>
+                <input type="text" name="id" class="form-control onlyAlphabetAndNumber" id="id" data-rule-required="true" placeholder="아이디" maxlength="30">
                       </div>
                   </div>
                   <div class="form-group" id="divPassword">
                       <div class="col-lg-10">
-                          <strong id="strong">비밀번호</strong><input type="password" class="form-control" id="password" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
+                          <label for="password"><strong id="strong">비밀번호</strong></label>
+                          <input type="password" class="form-control" id="password" name="password" data-rule-required="true" placeholder="패스워드" maxlength="30">
                       </div>
                   </div>
                   <div class="form-group" id="divPasswordCheck">
                       <div class="col-lg-10">
-                      <strong id="strong">비밀번호 확인</strong><input type="password" class="form-control" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+                      <label for="passwordCheck"><strong id="strong">비밀번호 확인</strong></label>
+                      <input type="password" class="form-control" name="passwordCheck" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
                       </div>
                   </div>
 
                   <div class="form-group" id="divName">
                       <div class="col-lg-10">
-                      <strong id="strong">이름</strong><input type="text" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="이름" maxlength="15">
+                      <label for="name"><strong id="strong">이름</strong></label>
+                      <input type="text" name="name" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="이름" maxlength="15">
                       </div>
                   </div>
 
                   <div class="form-group" id="divEmail">
                       <div class="col-lg-10">
-                      <strong id="strong">이메일</strong><input type="email" class="form-control" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
+                      <label for="email"><strong id="strong">이메일</strong></label>
+                      <input type="email" class="form-control" name="email" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
                       </div>
                   </div>
                   <div class="form-group" id="divPhoneNumber">
                       <div class="col-lg-10">
-                      <strong id="strong">휴대폰 번호</strong><input type="tel" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
+                      <label for="phoneNumber"><strong id="strong">휴대폰 번호</strong></label>
+                      <input type="tel" class="form-control onlyNumber" name="phoneNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
                       </div>
                   </div>
                   <div class="form-group">
                       <!-- <label for="inputGender" class="col-lg-2 control-label">성별</label> -->
                       <div class="col-lg-10">
-                          <strong>성별</strong><br>
-                          <select>
+                          <label for="sex"><strong>성별</strong></label>
+                          <select id="sex" name="sex">
                               <option value="남자">남자</option>
                               <option value="여자">여자</option>
                           </select>
@@ -132,41 +138,14 @@
                   <div class="form-group">
                       <!-- <label for="inputGender" class="col-lg-2 control-label">성별</label> -->
                       <div class="col-lg-10">
-                          <strong>신분</strong><br>
-                          <select>
+                          <label><strong>신분</strong></label>
+                          <select name="job">
                               <option value="환자">환자</option>
                               <option value="의사">의사</option>
                           </select>
                       </div>
                   </div>
-                  <!--
-                  <div class="form-group">
-                      <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이메일 수신여부</label>
-                      <div class="col-lg-10">
-                          <label class="radio-inline">
-                              <input type="radio" id="emailReceiveYn" name="emailReceiveYn" value="Y" checked> 동의합니다.
-                          </label>
-                          <label class="radio-inline">
-                              <input type="radio" id="emailReceiveYn" name="emailReceiveYn" value="N"> 동의하지 않습니다.
-                          </label>
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <label for="inputPhoneNumber" class="col-lg-2 control-label">SMS 수신여부</label>
-                      <div class="col-lg-10">
-                          <label class="radio-inline">
-                              <input type="radio" id="smsReceiveYn" name="smsReceiveYn" value="Y" checked> 동의합니다.
-                          </label>
-                          <label class="radio-inline">
-                              <input type="radio" id="smsReceiveYn" name="smsReceiveYn" value="N"> 동의하지 않습니다.
-                          </label>
-                      </div>
-                  </div> -->
-                  <!-- <div class="form-group">
-                      <div class="col-lg-offset-2 col-lg-10"> -->
-                          <button type="submit" class="btn btn-default" id="button">가입하기</button>
-                      <!-- </div>
-                  </div> -->
+                          <input type="submit" class="btn btn-default" id="button" value="가입하기"></input>
                 </fieldset>
               </form>
 
