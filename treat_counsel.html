@@ -87,11 +87,11 @@
 			</div>
 			<div class="contact-section">
 			<div class="container">
-				<form action="" method="post">
+				<form action="주소" method="get">
 					<div class="col-md-6 form-line">
 			  			<div class="form-group">
 			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" class="form-control" id="" placeholder="이름을 입력하세요">
+					    	<input type="text" name="name" class="form-control" id="" placeholder="이름을 입력하세요">
 				  		</div>
 					  	<div class="form-group">
 					    	<label for="address">Select Address</label>
@@ -108,7 +108,7 @@
 			  			</div>
               <div class="form-group">
 					    	<label for="telephone">Select Hospital Section</label><br>
-					    	<select name="doctor" id="select_doctor" style="color:#a3a3c2">
+					    	<select name="hospital" id="select_doctor" style="color:#a3a3c2">
                   <option value="">&nbsp &nbsp 병원 과 선택</option>
                   <option value="">&nbsp &nbsp 피부과</option>
                   <option value="">&nbsp &nbsp 비뇨기과</option>
@@ -129,21 +129,21 @@
 			  		<div class="col-md-6">
 			  			<div class="form-group">
 			  				<label for ="description"> Symptom</label>
-			  			 	<textarea  class="form-control" id="description" placeholder="증상을 상세히 적어주세요"></textarea>
+			  			 	<textarea  name="content" class="form-control" id="description" placeholder="증상을 상세히 적어주세요"></textarea>
 			  			</div>
 
               <!-- 파일업로드 -->
-              <label for="telephone">Select Symptom Image</label><br>
+              <label>Select Symptom Image</label><br>
               <div class="filebox bs3-primary">
                             <input class="upload-name" value="증상 이미지 선택" disabled="disabled">
 
                             <label for="ex_filename">사진 업로드</label>
-                          <input type="file" id="ex_filename" class="upload-hidden">
+                          <input type="file" id="ex_filename" name="pic_upload" class="upload-hidden">
                         </div>
 
 			  			<div>
 
-			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
 			  			</div>
 
 					</div>
