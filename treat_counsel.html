@@ -87,15 +87,15 @@
 			</div>
 			<div class="contact-section">
 			<div class="container">
-				<form action="주소" method="get">
+				<form id="form_counsel" action="주소" method="get">
 					<div class="col-md-6 form-line">
 			  			<div class="form-group">
 			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" name="name" class="form-control" id="" placeholder="이름을 입력하세요">
+					    	<input type="text" name="name" class="form-control" id="name" placeholder="이름을 입력하세요">
 				  		</div>
 					  	<div class="form-group">
 					    	<label for="address">Select Address</label>
-                <select name="address" id="select_doctor" style="color:#a3a3c2">
+                <select name="address" id="address" style="color:#a3a3c2">
                   <option value="">&nbsp &nbsp 지역선택</option>
                   <option value="">&nbsp &nbsp 서울특별시</option>
                   <option value="">&nbsp &nbsp 경기도</option>
@@ -108,7 +108,7 @@
 			  			</div>
               <div class="form-group">
 					    	<label for="telephone">Select Hospital Section</label><br>
-					    	<select name="hospital" id="select_doctor" style="color:#a3a3c2">
+					    	<select name="hospital" id="select_hospital" style="color:#a3a3c2">
                   <option value="">&nbsp &nbsp 병원 과 선택</option>
                   <option value="">&nbsp &nbsp 피부과</option>
                   <option value="">&nbsp &nbsp 비뇨기과</option>
@@ -143,7 +143,7 @@
 
 			  			<div>
 
-			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  				<button id="button" type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
 			  			</div>
 
 					</div>
@@ -166,6 +166,30 @@
               $(this).siblings('.upload-name').val(filename);
           });
         });
+
+        <!-- ajax구현 -->
+          $(document).ready(function() {
+            $("#button").click(function() {
+              var action = $("#form_counsel").attr('action');
+              var form_data = {
+                user_name: $("#name").val(),
+                user_address: $("#address").val(),
+                user_hospital: $("#select_hospital").val(),
+                user_doctor: $("#select_doctor").val(),
+                user_content: $("#content").val(),
+                user_image: $("#ex_filename").val(),
+                is_ajax:1
+              };
+              $.ajax({
+                type: "POST",
+                url: action,
+                data: form_data,
+              })
+              .done(function(msg) {
+                alert("상담이 등록되었습니다");
+              });
+            });
+          });
       </script>
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>
