@@ -83,7 +83,7 @@
                <col width="20%">
                <col width="80%">
              </colgroup>
-              <form id="form_later" action="주소" method="get">
+              <form id="form_later">
                 <textarea name=content id="write_text" rows ="6" cols="78" placeholder="진료는 만족스러우셨나요?"></textarea>
                     <div class="stars">
                             <input class="star star-5" id="star-5" type="radio" name="star5"/>
@@ -103,33 +103,6 @@
             </form>
             </div>
 
-            <script>
-            <!-- ajax구현 -->
-              $(document).ready(function() {
-                $("#submit_button").click(function() {
-                  var action = $("#form_later").attr('action');
-                  var form_data = {
-                    content: $("#write_text").val(),
-                    star-1: $("#star-1").val(),
-                    star-2: $("#star-2").val(),
-                    star-3: $("#star-3").val(),
-                    star-4: $("#star-4").val(),
-                    star-5: $("#star-5").val(),
-                    is_ajax:1
-                  };
-                  $.ajax({
-                    type: "POST",
-                    url: action,
-                    data: form_data,
-                  })
-                  .done(function(msg) {
-                    alert("후기가 등록되었습니다");
-                  });
-                });
-              });
-            </script>
-
-
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -143,5 +116,31 @@
 
 <!-- Theme JavaScript -->
 <script src="js/creative.min.js"></script>
+
+<script>
+<!-- ajax구현 -->
+  $(document).ready(function() {
+    $("#submit_button").click(function() {
+      var action = $("#form_later").attr('action');
+      var form_data = {
+        content: $("#write_text").val(),
+        star-1: $("#star-1").val(),
+        star-2: $("#star-2").val(),
+        star-3: $("#star-3").val(),
+        star-4: $("#star-4").val(),
+        star-5: $("#star-5").val(),
+        is_ajax:1
+      };
+      $.ajax({
+        type: "POST",
+        url: action,
+        data: form_data,
+      })
+      .done(function(msg) {
+        alert("후기가 등록되었습니다");
+      });
+    });
+  });
+</script>
 </body>
 </html>

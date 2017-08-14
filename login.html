@@ -78,7 +78,7 @@
 <div id="login">
     <div class="login">
       <h1>로그인</h1>
-      <form id="form1" action="주소" method="post">
+      <form id="form1">
       	<input type="text" name="id" placeholder="아이디" required="required" />
           <input type="password" name="password" placeholder="비밀번호" required="required" />
           <input id="button" type="submit" class="btn btn-primary btn-block btn-large" value="로그인"/>
@@ -92,36 +92,7 @@
        data-ad-client="ca-pub-9155049400353686"
        data-ad-slot="9589048256"
        data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  $(document).ready(function() {
-    $("#button").click(function() {
-      var action = $("#form1").attr('action');
-      var form_data = {
-        user_id: $("#id").val(),
-        user_pw: $("#password").val(),
-        is_ajax: 1
-      };
-      $.ajax({
-        type: "POST",
-        url: action,
-        data: form_data,
-        success: function(response) {
-          if(response == 'success') {
-            // $("#message").html("<p>로그인 성공</p>")
-            // $("#form1").slideUp('slow');
-            alert("로그인 되었습니다");
-          }
-          else {
-            // $("#message").html("<p>아이디 또는 비밀번호가 잘못되었습니다</p>")
-            alert("아이디 또는 비밀번호가 잘못되었습니다");
-          }
-        }
-      });
-      return false;
-    });
-  });
-  </script>
+
   </div>
 </div>
 
@@ -139,6 +110,38 @@
 
       <!-- Theme JavaScript -->
       <script src="js/creative.min.js"></script>
+
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      $(document).ready(function() {
+        $("#button").click(function() {
+          var action = $("#form1").attr('action');
+          var form_data = {
+            user_id: $("#id").val(),
+            user_pw: $("#password").val(),
+            is_ajax: 1
+          };
+          $.ajax({
+            type: "POST",
+            url: action,
+            data: form_data,
+            success: function(response) {
+              if(response == 'success') {
+                // $("#message").html("<p>로그인 성공</p>")
+                // $("#form1").slideUp('slow');
+                alert("로그인 되었습니다");
+                location.href="./index.html";
+              }
+              else {
+                // $("#message").html("<p>아이디 또는 비밀번호가 잘못되었습니다</p>")
+                alert("아이디 또는 비밀번호가 잘못되었습니다");
+              }
+            }
+          });
+          return false;
+        });
+      });
+      </script>
 
   </body>
   </html>
