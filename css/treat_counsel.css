@@ -26,16 +26,17 @@ body{
 }
 #contact{
 
-    font-family: 'Teko', sans-serif;
+  font-family: 'Teko', sans-serif;
   padding-top: 150px;
   width: 100%;
   width: 100vw;
   height: 100%;
-    color : #fff;
+  color : #fff;
 }
 .contact-section{
   padding-top: 40px;
 }
+
 .contact-section .col-md-6{
   /*width: 50%;*/
 }
@@ -48,15 +49,18 @@ body{
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
 label{
   font-size: 1.3em;
   line-height: 1em;
   font-weight: normal;
 }
+
 .form-control{
   font-size: 1.1em;
   color: #a3a3c2;
 }
+
 textarea.form-control {
     height: 206px;
    /* margin-top: px;*/
@@ -81,6 +85,12 @@ textarea.form-control {
   border-radius: 20px;
 }
 
+select{
+  width:100%;
+  height:33px;
+  border: 2px solid #f0f0f5;
+  border-radius: 4px;
+}
 /*파일업로드 소스*/
 .where {
   display: block;
