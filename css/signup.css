@@ -2,17 +2,19 @@
 body{
   width:100%;
   height:100%;
-  background: linear-gradient(to top right, #0099ff 0%, #cc66ff 94%);
+  /*background: linear-gradient(to top right, #0099ff 0%, #cc66ff 94%);
   -webkit-background-size: 200%;
   -o-background-size: 200%;
   -moz-background-size: 200%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
+  background-color: #EFEFEF;
 }
 
 #header{
   width:100%;
   height:50px;
+  background-color: #0092ff;
 }
 
 /*#form_left{
@@ -27,19 +29,25 @@ body{
   float: left;
 }*/
 
-#signup{
-  margin-top: 50px;
-  width: 100%;
+#dream{
+  margin: 0 auto;
+  width: 320px;
   height: 100px;
-  text-align: center;
+  background-position: center;
+  background-image: url('../img/logo1.jpg');
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
 #form_signup{
   width: 100%;
   margin: 0 auto;
-  height: 800px;
+  height: 745px;
 }
 
+#box{
+  margin-top: 60px;
+}
 #form_sign{
   margin-top: 30px;
 }
@@ -53,43 +61,42 @@ select{
 fieldset{
   text-align: left;
   margin: 0 auto;
-  width:300px;
+  width:400px;
   height: auto;
 }
 
 
-
-.form-group{position: relative;}
-
-.form-group input[type="text"],
-.form-group input[type="password"],
-.form-group input[type="email"],
-.form-group input[type="tel"]{
-  width:300px;
-  height:37px;
-  line-height: normal;
-  padding: .8em, .5em;
+#id, #password, #passwordCheck, #name, #email, #phoneNumber, #attached{
+  width:400px;
+  height:55px;
+  border-radius: 0px;
+  font-size: 18px;
+    border: 1px solid #D3D3D3;
+  /*margin-bottom: 1px;*/
 }
 
 select{
-  height:33px;
-  width:300px;
-  border: 2px solid #f0f0f5;
-  border-radius: 4px;
+  height:55px;
+  width:400px;
+  font-size: 18px;
+  padding-left: 5px;
+  /*margin-bottom: 1px;*/
+  border: 1px solid #D3D3D3;
 }
 #button{
-  margin-top: 5px;
-  width:300px;
-  height:50px;
-  background-color: transparent;
-  color:white;
-  border: 3px solid #f0f0f5;
-  font-size: 16px;
+  margin-top: 15px;
+  width: 400px;
+  height: 60px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #0092ff;
+  color: white;
 }
 
-footer{
-  border-top: 1px solid #D5D8DC;
-  padding-top: 40px;
-  width: 100%;
-  float:left;
+#footer{
+  color: black;
+  margin-top: 10px;
+  width:100%;
+  height: 70px;
 }

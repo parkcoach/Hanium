@@ -77,115 +77,59 @@
 
     </div>
 
-    <div id="signup">
-      <h1 style="color:#f0f0f5">회원가입</h1>
-    <div>
-
 
 <div id="form_signup">
-
+  <div id="box">
+        <div id="dream">
+        </div>
          <form class="form-horizontal" id="form_sign">
-                 <fieldset>
-                  <div class="form-group" id="divId">
+              <fieldset>
 
-                      <div class="col-lg-10" id="formid">
-                <label for="id"><strong id="strong">아이디</strong></label>
                 <input type="text" name="id" class="form-control onlyAlphabetAndNumber" id="id" data-rule-required="true" placeholder="아이디" maxlength="30">
-                      </div>
-                  </div>
-                  <div class="form-group" id="divPassword">
-                      <div class="col-lg-10">
-                          <label for="password"><strong id="strong">비밀번호</strong></label>
-                          <input type="password" class="form-control" id="password" name="password" data-rule-required="true" placeholder="패스워드" maxlength="30">
-                      </div>
-                  </div>
-                  <div class="form-group" id="divPasswordCheck">
-                      <div class="col-lg-10">
-                      <label for="passwordCheck"><strong id="strong">비밀번호 확인</strong></label>
-                      <input type="password" class="form-control" name="passwordCheck" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
-                      </div>
-                  </div>
 
-                  <div class="form-group" id="divName">
-                      <div class="col-lg-10">
-                      <label for="name"><strong id="strong">이름</strong></label>
-                      <input type="text" name="name" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="이름" maxlength="15">
-                      </div>
-                  </div>
+                <input type="password" class="form-control" id="password" name="password" data-rule-required="true" placeholder="패스워드" maxlength="30">
 
-                  <div class="form-group" id="divEmail">
-                      <div class="col-lg-10">
-                      <label for="email"><strong id="strong">이메일</strong></label>
-                      <input type="email" class="form-control" name="email" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
-                      </div>
-                  </div>
-                  <div class="form-group" id="divPhoneNumber">
-                      <div class="col-lg-10">
-                      <label for="phoneNumber"><strong id="strong">휴대폰 번호</strong></label>
-                      <input type="tel" class="form-control onlyNumber" name="phoneNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <!-- <label for="inputGender" class="col-lg-2 control-label">성별</label> -->
-                      <div class="col-lg-10">
-                          <label for="sex"><strong>성별</strong></label>
-                          <select id="sex" name="sex">
-                              <option value="남자">남자</option>
-                              <option value="여자">여자</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <!-- <label for="inputGender" class="col-lg-2 control-label">성별</label> -->
-                      <div class="col-lg-10">
-                          <label><strong>신분</strong></label>
-                          <select name="job">
-                              <option value="환자">환자</option>
-                              <option value="의사">의사</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="form-group" id="divPhoneNumber">
-                      <div class="col-lg-10">
-                      <label for="attached"><strong id="strong">소속</strong></label>
-                      <input type="tel" class="form-control onlyNumber" name="attached" id="attached" data-rule-required="true" placeholder="소속을 입력하세요." maxlength="15">
-                      </div>
-                  </div>
-                          <input type="submit" class="btn btn-default" id="button" value="가입하기"></input>
+                <input type="password" class="form-control" name="passwordCheck" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+
+                <input type="text" name="name" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="이름" maxlength="15">
+
+                <input type="email" class="form-control" name="email" id="email" data-rule-required="true" placeholder="이메일" maxlength="40">
+
+                <input type="tel" class="form-control onlyNumber" name="phoneNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력하세요." maxlength="11">
+
+                <!-- <label for="sex"><strong style="color:gray">성별</strong></label> -->
+                <select id="sex" name="sex">
+                  <option value="남자">남자</option>
+                  <option value="여자">여자</option>
+                </select>
+
+                <!-- <label for="job"><strong style="gray">신분</strong></label> -->
+                <select name="job">
+                  <option value="환자">환자</option>
+                  <option value="의사">의사</option>
+                </select>
+
+                <input type="tel" class="form-control onlyNumber" name="attached" id="attached" data-rule-required="true" placeholder="소속을 입력하세요." maxlength="15">
+
+                <input type="submit" class="btn btn-default" id="button" value="가입하기"></input>
                 </fieldset>
               </form>
        </div>
+     </div>
 
 
-        <footer>
-              <div class="container" style="font-family:Arial;">
-                  <div class="row">
-                      <div class="col-lg-10 col-lg-offset-1 text-center">
-                          <p style="font-size:18px"><strong>Wonderful Guys</strong>
-                          </p>
-                          <ul class="list-unstyled" style="font-size:15px;">
-                              <li style="color: #f0f0f5;" ><i style="color: #f0f0f5;" class="fa fa-phone fa-fw"></i> 010-3310-6513</li>
-                              <li style="color: #f0f0f5;" ><i style="color: #f0f0f5;" class="fa fa-envelope-o fa-fw"></i>Dr.dream@WonderfulGuys.com</li>
-                          </ul>
-                          <br>
-                          <ul class="list-inline">
-                              <li>
-                                  <a href="#"><i style="color: #f0f0f5;" class="fa fa-facebook fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i style="color: #f0f0f5;" class="fa fa-twitter fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i style="color: #f0f0f5;" class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                              </li>
-                          </ul>
-                          <hr style="color: #f0f0f5;">
-                          <p class="text-muted" style="font-size:15px; color: #f0f0f5;">&copy; 2017, Wonderful Guys</p>
-                      </div>
-                  </div>
-              </div>
-              <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-          </footer>
+       <footer>
+             <div class="container" style="font-family:Arial;">
+                 <div class="row">
+                     <div class="col-lg-10 col-lg-offset-1 text-center">
+
+                         <p class="text-muted" style="font-size:15px;">&copy; 2017, Wonderful Guys, All Rights Reserved.</p>
+                     </div>
+                 </div>
+             </div>
+             <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+         </footer>
+
 
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>

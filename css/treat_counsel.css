@@ -26,7 +26,7 @@ body{
 }
 #contact{
 
-  font-family: 'Teko', sans-serif;
+  font-family: 'sans-serif';
   padding-top: 150px;
   width: 100%;
   width: 100vw;
@@ -51,9 +51,9 @@ body{
 }
 
 label{
-  font-size: 1.3em;
+  font-size: 15px;
   line-height: 1em;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .form-control{
