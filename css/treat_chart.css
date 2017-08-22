@@ -7,7 +7,7 @@ head{
 body{
   width:100%;
   height:100%;
-  background-color:#0092ff;
+  background-color: #EFEFEF;
   /*background: linear-gradient(to right, #3399ff 0%, #9966ff 100%);
   -webkit-background-size: 200%;
   -o-background-size: 200%;
@@ -15,54 +15,94 @@ body{
   background-position: center;*/
 }
 
-.section-content{
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.content-header{
-  font-family: 'sans-serif', cursive;
-  color:#fcc500;
-  font-size: 45px;
+#header{
+  width:100%;
+  height:50px;
+  background-color: #0092ff;
 }
 
 #contact{
-
-  padding-top: 130px;
+  padding-top: 30px;
   width: 100%;
   color : #fff;
 }
 
-#chart{
-
+#introduce{
+  width: 880px;
   margin: 0 auto;
-  width: 840px;
+  border: 1px solid black;
+  color: #A9A9A9;
+  background-color: white;
+  border: 1px solid #C0C0C0;
+  padding-left: 15px;
+}
+#chart{
+  margin: 0 auto;
+  width: 900px;
+  height: auto;
 }
 
 #memo{
   float:left;
-  border: 1px solid #fff;
-  border-radius: 8px;
+  border: 1px solid #C0C0C0;
+  width:280px;
   margin: 10px;
-  width:260px;
-  height: 295px;
-  padding-left: 50px;
-  padding-top: 65px;
-  padding-right: 50px;
-  /*background: url('../img/write.png');*/
-  background-color: #0092ff;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 95%;
-  -o-background-size: 120%;
-  -moz-background-size: 120%;
+  height: 215px;
+  background-color: white;
 }
 
-#con{
-  font-family: 'sans-serif';
+#info{
+  width:200px;
+  height: 28px;
+  color: #696969;
+  margin-top: 5px;
+  margin-left: 5px;
   font-size: 16px;
-  border-bottom: 1px solid #fff;
-  border-width: thin;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#date{
+  width:200px;
+  height: 28px;
+  color: #696969;
+  margin-left: 5px;
+  font-size: 12px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#co_div{
+  margin: 6px;
+  height: 100px;
+}
+
+#co{
+  color:#A9A9A9;
+  font-size: 13px;
+}
+
+#button{
+  color: white;
+  width: 100%;
+  height: 40px;
+  background-color: #0092ff;
+  border: 1px solid #0092ff;
+  font-size: 15px;
+}
+
+#state{
+  width:60px;
+  text-align: center;
+  color: white;
+  height: 28px;
+  float: right;
+  background-color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+  border-radius: 15px;
+  font-size: 13px;
+  text-align: center;
+  margin: 5px;
 }
 
 footer{
