@@ -1,0 +1,185 @@
+head{
+  width:100%;
+  height:200px;
+  background-color:#0092ff;
+}
+
+body{
+  width:100%;
+  height:100%;
+  background-color: #EFEFEF;
+  /*background: linear-gradient(to right, #3399ff 0%, #9966ff 100%);
+  -webkit-background-size: 200%;
+  -o-background-size: 200%;
+  -moz-background-size: 200%;
+  background-position: center;*/
+}
+
+#header{
+  width:100%;
+  height:50px;
+  background-color: #0092ff;
+}
+
+#contact{
+  padding-top: 30px;
+  width: 100%;
+  color : #fff;
+}
+
+#sort{
+  width: 880px;
+  margin: 0 auto;
+}
+#introduce{
+  width: 880px;
+
+  height: 110px;
+  border: 1px solid black;
+  color: #A9A9A9;
+  background-color: white;
+  border: 1px solid #C0C0C0;
+  padding-top: 13px;
+  text-align: center;
+}
+
+#chart{
+  width: 880px;
+  margin-top: 10px;
+  height: 845px;
+  border: 1px solid black;
+  color: #A9A9A9;
+  background-color: white;
+  border: 1px solid #C0C0C0;
+}
+
+#table{
+  width:860px;
+  margin: 10px;
+  height: 100px;
+  color: #696969;
+}
+
+#up_table, #down_table{
+  width: 860px;
+  height: 50px;
+
+}
+
+#kind, #dr{
+  height: 50px;
+  width: 100px;
+  float: left;
+  border: 1px solid #C0C0C0;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+#kind_input, #dr_input{
+  height: 50px;
+  width: 120px;
+  border: 1px solid #C0C0C0;
+  float: left;
+  padding: 10px;
+}
+
+#ad, #register{
+  height: 50px;
+  width: 120px;
+  border: 1px solid #C0C0C0;
+  background-color: #efefef;
+  float:left;
+  padding: 10px;
+}
+
+#ad_input, #register_input{
+  height: 50px;
+  width: 200px;
+  border: 1px solid #C0C0C0;
+  float:left;
+  padding: 10px;
+}
+
+#state, #end{
+  height: 50px;
+  width: 120px;
+  border: 1px solid #C0C0C0;
+  background-color: #efefef;
+  float:left;
+  padding: 10px;
+}
+
+#state_input, #end_input{
+  height: 50px;
+  width: 198px;
+  border: 1px solid #C0C0C0;
+  float:left;
+  padding: 10px;
+}
+
+#counsel{
+  width: 860px;
+  margin: 10px;
+  height: 400px;
+
+  border: 1px solid #C0C0C0;
+  color: #696969;
+}
+
+#counsel_intro{
+  width: 100px;
+  height: 400px;
+  border: 1px solid #C0C0C0;
+  float:left;
+  text-align: center;
+  padding-top: 180px;
+}
+
+#textcap{
+    border: 1px solid #C0C0C0;
+    float:left;
+      height: 400px;
+      width:758px;
+}
+#counsel_text{
+  margin: 5px;
+}
+
+#img_div{
+  margin: 10px;
+  border:1px solid #C0C0C0;
+  width: 860px;
+  height: 300px;
+}
+
+#img_intro{
+  width: 100px;
+  height: 300px;
+  border: 1px solid #C0C0C0;
+  float:left;
+  text-align: center;
+  padding-top: 140px;
+    color: #696969;
+}
+
+#img_value{
+    border: 1px solid #C0C0C0;
+    float:left;
+      height: 300px;
+      width:758px;
+    padding-left: 15px;
+}
+
+#img1, #img2{
+  width: 330px;
+  height:260px;
+  margin: 15px;
+  float: left;
+}
+
+footer{
+  color:#fff;
+  padding-top: 60px;
+  width: 100%;
+  float:left;
+}

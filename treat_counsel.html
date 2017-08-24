@@ -80,76 +80,87 @@
 
     </div>
 
-    <section id="contact">
-			<div class="section-content">
-				<h1 class="section-header" style="font-family:Arial; font-size:40px"><strong><span class="content-header wow fadeIn " style="font-family:Arial; font-size:36px" data-wow-delay="0.2s" data-wow-duration="2s">진료상담</span></strong></h1>
-				<h3>상담 내용과 증상 사진을 업로드하면 초기진단 및 상담을 받을 수 있습니다</h3>
-			</div>
-			<div class="contact-section">
-			<div class="container">
-				<form id="form_counsel">
-					<div class="col-md-6 form-line">
-			  			<div class="form-group">
-			  				<label for="exampleInputUsername">이름</label>
-					    	<input type="text" name="name" class="form-control" id="name" placeholder="이름을 입력하세요">
-				  		</div>
-					  	<div class="form-group">
-					    	<label for="address">사는 지역</label>
-                <select name="address" id="address" style="color:#a3a3c2">
-                  <option value="">&nbsp 지역을 선택하세요</option>
-                  <option value="">&nbsp 서울특별시</option>
-                  <option value="">&nbsp 경기도</option>
-                  <option value="">&nbsp 강원도</option>
-                  <option value="">&nbsp 충청북도</option>
-                  <option value="">&nbsp 충청남도</option>
-                  <option value="">&nbsp 경상북도</option>
-                  <option value="">&nbsp 경상남도</option>
+    <div id="section_div">
+      <div id="introduce_div">
+        <h2>진료상담</h2>
+        <p>상담 내용과 증상 사진을 업로드하면 초기진단 및 상담을 받을 수 있습니다</p>
+      </div>
+
+      <div id="content_div">
+        <div id="register_div">
+          <form id="form_counsel">
+            <label for="telephone">진료 과</label><br>
+            <select name="hospital" id="select_hospital" style="color:#a3a3c2">
+              <option value="">&nbsp 진료 과를 선택하세요</option>
+              <option value="">&nbsp 피부과</option>
+              <option value="">&nbsp 비뇨기과</option>
+              <option value="">&nbsp 이비인후과</option>
+            </select>
+
+
+            <label for="telephone">진료 의사</label><br>
+            <select name="doctor" id="select_doctor" style="color:#a3a3c2">
+              <option value="">&nbsp 의사를 선택하세요</option>
+              <option value="">&nbsp 박우진</option>
+              <option value="">&nbsp 고종익</option>
+              <option value="">&nbsp 오동수</option>
+              <option value="">&nbsp 진재언</option>
+            </select>
+
+  					    	<label for="address">사는 지역</label>
+                  <select name="address" id="select_address" style="color:#a3a3c2">
+                    <option value="">&nbsp 지역을 선택하세요</option>
+                    <option value="">&nbsp 서울특별시</option>
+                    <option value="">&nbsp 경기도</option>
+                    <option value="">&nbsp 강원도</option>
+                    <option value="">&nbsp 충청북도</option>
+                    <option value="">&nbsp 충청남도</option>
+                    <option value="">&nbsp 경상북도</option>
+                    <option value="">&nbsp 경상남도</option>
+                  </select>
+
+
+  			  				<label for ="description"> 증상</label>
+  			  			 	<textarea  name="content" class="form-control" id="description" style="resize:none;" placeholder="증상을 상세히 적어주세요"></textarea>
+
+
+                <!-- 파일업로드 -->
+                <label>증상 이미지 (2장까지 업로드 가능)</label><br>
+                <div class="filebox bs3-primary">
+                  <input class="upload-name" value="증상 이미지 선택" disabled="disabled">
+
+                  <label for="ex_filename" id="upload_button">사진 업로드</label>
+                  <input type="file" id="ex_filename" name="pic_upload" class="upload-hidden" multiple>
+                </div>
+
+                <label for="datepicker">원격진료 예약</label><br>
+                <input type="date" id="select_date">
+                <select name="address" id="select_time" style="color:#a3a3c2">
+                  <option value="">&nbsp 예약시간을 선택하세요</option>
+                  <option value="">&nbsp 10:00~10:30</option>
+                  <option value="">&nbsp 10:30~11:00</option>
+                  <option value="">&nbsp 11:00~11:30</option>
+                  <option value="">&nbsp 11:30~12:00</option>
+                  <option value="">&nbsp 13:00~13:30</option>
+                  <option value="">&nbsp 13:30~14:00</option>
+                  <option value="">&nbsp 14:00~14:30</option>
+                  <option value="">&nbsp 14:30~15:00</option>
+                  <option value="">&nbsp 15:00~15:30</option>
+                  <option value="">&nbsp 15:30~16:00</option>
+                  <option value="">&nbsp 16:00~16:30</option>
+                  <option value="">&nbsp 16:30~17:00</option>
                 </select>
-			  			</div>
-              <div class="form-group">
-					    	<label for="telephone">진료 과</label><br>
-					    	<select name="hospital" id="select_hospital" style="color:#a3a3c2">
-                  <option value="">&nbsp 진료 과를 선택하세요</option>
-                  <option value="">&nbsp 피부과</option>
-                  <option value="">&nbsp 비뇨기과</option>
-                  <option value="">&nbsp 이비인후과</option>
-                </select>
-			  			</div>
-              <div class="form-group">
-					    	<label for="telephone">진료 의사</label><br>
-					    	<select name="doctor" id="select_doctor" style="color:#a3a3c2">
-                  <option value="">&nbsp 의사를 선택하세요</option>
-                  <option value="">&nbsp 박우진</option>
-                  <option value="">&nbsp 고종익</option>
-                  <option value="">&nbsp 오동수</option>
-                  <option value="">&nbsp 진재언</option>
-                </select>
-			  			</div>
-			  		</div>
-			  		<div class="col-md-6">
-			  			<div class="form-group">
-			  				<label for ="description"> 증상</label>
-			  			 	<textarea  name="content" class="form-control" id="description" placeholder="증상을 상세히 적어주세요"></textarea>
-			  			</div>
 
-              <!-- 파일업로드 -->
-              <label>증상 이미지</label><br>
-              <div class="filebox bs3-primary">
-                            <input class="upload-name" value="증상 이미지 선택" disabled="disabled">
 
-                            <label for="ex_filename">사진 업로드</label>
-                          <input type="file" id="ex_filename" name="pic_upload" class="upload-hidden">
-                        </div>
+                <input type="button" id="button" value="상담등록">
 
-			  			<div>
 
-			  				<button id="button" type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-			  			</div>
+  				</form>
+      </div>
+    </div>
 
-					</div>
-				</form>
-			</div>
-		</section>
+
+
 
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>
@@ -166,6 +177,8 @@
       <script src="js/creative.min.js"></script>
 
       <script> /*파일 업로드 부분 js*/
+
+
           $(document).ready(function(){
           var fileTarget = $('.filebox .upload-hidden');
 
@@ -177,6 +190,7 @@
               }
 
               $(this).siblings('.upload-name').val(filename);
+
           });
         });
 

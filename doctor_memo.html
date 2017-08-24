@@ -24,7 +24,11 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/doctor_memo.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,6 +38,10 @@
     <![endif]-->
 
 </head>
+
+<div id="header">
+
+</div>
 
 <body id="page-top">
 
@@ -73,52 +81,58 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div id="header">
-
-    </div>
-
-    <div id="login">
-          <div id="dream">
+    <section id="contact">
+      <div id="sort">
+			<div id="introduce">
+				<h1 class="section-header" style="font-family:Arial; font-size:36px"><strong><span class="content-header wow fadeIn " style="font-family:Arial; color:
+          #696969;font-size:36px" data-wow-delay="0.2s" data-wow-duration="2s">진료기록서</span></strong></h1>
+      </div>
+      <div id="chart">
+        <div id="table">
+          <div id="up_table">
+            <div id="kind"><p>진료과</p></div>
+            <div id="kind_input"><p>피부과</p></div>
+            <div id="ad"><p>주소</p></div>
+            <div id="ad_input"><p>강원도 원주시</p></div>
+            <div id="state"><p>상태</p></div>
+            <div id="state_input"><p>진찰중</p></div>
           </div>
-          <form id="form">
-          	  <input type="text" id="id" placeholder="아이디" required="required" />
-              <br>
-              <input type="password" id="password" placeholder="비밀번호" required="required" />
-              <input id="button" type="submit" class="btn btn-primary btn-block btn-large" value="로그인"/>
-          </form>
-          <p style="color:black; font-size:13px"><a href="" style="color:black">아이디</a> / <a href="" style="color:black">비밀번호</a> 찾기</p>
+
+          <div id="down_table">
+            <div id="dr"><p>의사</p></div>
+            <div id="dr_input"><p>센세이</p></div>
+            <div id="register"><p>등록일자</p></div>
+            <div id="register_input"><p>2017-08-23</p></div>
+            <div id="end"><p>완료일자</p></div>
+            <div id="end_input"></div>
+          </div>
+        </div>
+
+        <div id="counsel">
+          <div id="counsel_intro">
+            <p>상담내용</p>
+          </div>
+          <div id="textcap">
+          <div id="counsel_text">
+            <p>피부가 너무 가렵고 먼지가 많은 곳에 가면 두드러기가 너무 심해져서 그때마다 너무 괴롭고
+            진물이 나오고 피가 나와요 어떻게 해야 할까요 빨리 진찰해주시고 원격진료 예약도 잡아주세요</p>
+          </div>
+        </div>
+        </div>
+
+        <div id="img_div">
+          <div id="img_intro"><p>증상사진</p></div>
+          <div id="img_value">
+            <img id="img1"src="img/sym1.jpg"/>
+            <img id="img2"src="img/sym2.jpg"/>
+          </div>
+      </div>
+      </div>
     </div>
+    <section>
 
 
-        <footer>
-              <div class="container" style="font-family:Arial;">
-                  <div class="row">
-                      <div class="col-lg-10 col-lg-offset-1 text-center">
-                          <p style="font-size:18px"><strong>Wonderful Guys</strong>
-                          </p>
-                          <ul class="list-unstyled" style="font-size:15px;">
-                              <li><i class="fa fa-phone fa-fw"></i> 010-3310-6513</li>
-                              <li><i class="fa fa-envelope-o fa-fw"></i>Dr.dream@WonderfulGuys.com</li>
-                          </ul>
-                          <br>
-                          <ul class="list-inline">
-                              <li>
-                                  <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                              </li>
-                          </ul>
-                          <hr class="small">
-                          <p class="text-muted" style="font-size:15px;">&copy; 2017, Wonderful Guys</p>
-                      </div>
-                  </div>
-              </div>
-              <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-          </footer>
+
 
       <!-- jQuery -->
       <script src="vendor/jquery/jquery.min.js"></script>
@@ -133,38 +147,5 @@
 
       <!-- Theme JavaScript -->
       <script src="js/creative.min.js"></script>
-
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      $(document).ready(function() {
-        $("#button").click(function() {
-          var action = $("#form1").attr('action');
-          var form_data = {
-            user_id: $("#id").val(),
-            user_pw: $("#password").val(),
-            is_ajax: 1
-          };
-          $.ajax({
-            type: "POST",
-            url: action,
-            data: form_data,
-            success: function(response) {
-              if(response == 'success') {
-                // $("#message").html("<p>로그인 성공</p>")
-                // $("#form1").slideUp('slow');
-                alert("로그인 되었습니다");
-                location.href="/index.html";
-              }
-              else {
-                // $("#message").html("<p>아이디 또는 비밀번호가 잘못되었습니다</p>")
-                alert("아이디 또는 비밀번호가 잘못되었습니다");
-              }
-            }
-          });
-          return false;
-        });
-      });
-      </script>
-
   </body>
   </html>
