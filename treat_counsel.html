@@ -120,8 +120,8 @@
                   </select>
 
 
-  			  				<label for ="description"> 증상</label>
-  			  			 	<textarea  name="content" class="form-control" id="description" style="resize:none;" placeholder="증상을 상세히 적어주세요"></textarea>
+  			  				<label for ="symptom_text"> 증상</label>
+  			  			 	<textarea class="form-control" id="symptom_text" style="resize:none;" placeholder="증상을 상세히 적어주세요"></textarea>
 
 
                 <!-- 파일업로드 -->
@@ -129,11 +129,11 @@
                 <div class="filebox bs3-primary">
                   <input class="upload-name" value="증상 이미지 선택" disabled="disabled">
 
-                  <label for="ex_filename" id="upload_button">사진 업로드</label>
-                  <input type="file" id="ex_filename" name="pic_upload" class="upload-hidden" multiple>
+                  <label for="upload_image" id="upload_button">사진 업로드</label>
+                  <input type="file" id="upload_image" class="upload-hidden" multiple>
                 </div>
 
-                <label for="datepicker">원격진료 예약</label><br>
+                <label for="select_date">원격진료 예약</label><br>
                 <input type="date" id="select_date">
                 <select name="address" id="select_time" style="color:#a3a3c2">
                   <option value="">&nbsp 예약시간을 선택하세요</option>
@@ -158,6 +158,19 @@
   				</form>
       </div>
     </div>
+</div>
+
+    <footer>
+          <div class="container" style="font-family:Arial;">
+              <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 text-center">
+
+                      <p class="text-muted" style="font-size:15px;">&copy; 2017, Wonderful Guys, All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+          <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+      </footer>
 
 
 
@@ -199,12 +212,13 @@
             $("#button").click(function() {
               var action = $("#form_counsel").attr('action');
               var form_data = {
-                user_name: $("#name").val(),
-                user_address: $("#address").val(),
                 user_hospital: $("#select_hospital").val(),
                 user_doctor: $("#select_doctor").val(),
-                user_content: $("#content").val(),
-                user_image: $("#ex_filename").val(),
+                user_address: $("#address").val(),
+                user_symptom: $("#symptom_text").val(),
+                user_image: $("#upload_image").val(),
+                user_date: $("#select_date").val(),
+                user_time: $("#select_time").val(),
                 is_ajax:1
               };
               $.ajax({
