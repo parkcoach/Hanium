@@ -28,11 +28,11 @@ body{
 }
 
 #sort{
-  width: 880px;
+  width: 810px;
   margin: 0 auto;
 }
 #introduce{
-  width: 880px;
+  width: 810px;
 
   height: 110px;
   border: 1px solid black;
@@ -44,9 +44,9 @@ body{
 }
 
 #chart{
-  width: 880px;
+  width: 810px;
   margin-top: 10px;
-  height: 845px;
+  height: 960px;
   border: 1px solid black;
   color: #A9A9A9;
   background-color: white;
@@ -54,21 +54,21 @@ body{
 }
 
 #table{
-  width:860px;
-  margin: 10px;
+  width:730px;
+  margin: 40px;
   height: 100px;
   color: #696969;
 }
 
 #up_table, #down_table{
-  width: 860px;
+  width: 730px;
   height: 50px;
 
 }
 
 #kind, #dr{
   height: 50px;
-  width: 100px;
+  width: 85px;
   float: left;
   border: 1px solid #C0C0C0;
   background-color: #efefef;
@@ -77,7 +77,7 @@ body{
 
 #kind_input, #dr_input{
   height: 50px;
-  width: 120px;
+  width: 125px;
   border: 1px solid #C0C0C0;
   float: left;
   padding: 10px;
@@ -85,7 +85,7 @@ body{
 
 #ad, #register{
   height: 50px;
-  width: 120px;
+  width: 105px;
   border: 1px solid #C0C0C0;
   background-color: #efefef;
   float:left;
@@ -94,7 +94,7 @@ body{
 
 #ad_input, #register_input{
   height: 50px;
-  width: 200px;
+  width: 155px;
   border: 1px solid #C0C0C0;
   float:left;
   padding: 10px;
@@ -102,7 +102,7 @@ body{
 
 #state, #end{
   height: 50px;
-  width: 120px;
+  width: 105px;
   border: 1px solid #C0C0C0;
   background-color: #efefef;
   float:left;
@@ -111,15 +111,15 @@ body{
 
 #state_input, #end_input{
   height: 50px;
-  width: 198px;
+  width: 155px;
   border: 1px solid #C0C0C0;
   float:left;
   padding: 10px;
 }
 
 #counsel{
-  width: 860px;
-  margin: 10px;
+  width: 730px;
+  margin: 40px;
   height: 400px;
 
   border: 1px solid #C0C0C0;
@@ -138,17 +138,17 @@ body{
 #textcap{
     border: 1px solid #C0C0C0;
     float:left;
-      height: 400px;
-      width:758px;
+    height: 400px;
+    width:628px;
 }
 #counsel_text{
   margin: 5px;
 }
 
 #img_div{
-  margin: 10px;
+  margin: 40px;
   border:1px solid #C0C0C0;
-  width: 860px;
+  width: 730px;
   height: 300px;
 }
 
@@ -166,14 +166,15 @@ body{
     border: 1px solid #C0C0C0;
     float:left;
       height: 300px;
-      width:758px;
+      width:628px;
     padding-left: 15px;
 }
 
 #img1, #img2{
-  width: 330px;
-  height:260px;
-  margin: 15px;
+  width: 285px;
+  height:270px;
+  margin: 6px;
+  padding-top: 15px;
   float: left;
 }
 

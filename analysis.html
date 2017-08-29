@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Dr.Dream</title> <!--위에 타이틀-->
 
@@ -18,7 +19,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -26,123 +27,327 @@
     <link href="css/creative.min.css" rel="stylesheet">
     <link href="css/analysis.css" rel="stylesheet">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">Dr.Dream</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="treat_main.html">원격진료</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="analysis.html">증상분석</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="later.html">상담후기</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="signup.html">회원가입</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="login.html">로그인</a>
-                    </li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">Dr.Dream</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <div id="introduce">
-      <h1><strong>Dr.dream에게 </strong><strong id="Highlight">분석받으세요</strong></h1>
-      <h3>빅데이터 기반 증상분석과 식이요법 추천을 통해 병을 예방할 수 있습니다</h3>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="treat_main.html">원격진료</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="analysis.html">증상분석</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="later.html">상담후기</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="signup.html">회원가입</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.html">로그인</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div id="introduce">
+    <h1><strong>Dr.dream에게 </strong><strong id="Highlight">분석받으세요</strong></h1>
+    <h3>빅데이터 기반 증상분석과 식이요법 추천을 통해 병을 예방할 수 있습니다</h3>
+</div>
+
+<div id="hr"></div>
+
+<div id="hospital_button_div">
+    <button type="button" name="button" id="dermatology" onclick="test(this)">피부과</button>
+    <button type="button" name="button" id="urology" onclick="test(this)">비뇨기과</button>
+    <button type="button" name="button" id="eyes" onclick="test(this)">안과</button>
+    <button type="button" name="button" id="dentist" onclick="test(this)">치과</button>
+</div>
+
+<div id="check" style="text-align: center; font-size: 20px; padding-top:3% ;">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        var checkpoint = 0;
+        var checkList = [];
+        var str = [];
+        var visible = none;
+        function test(test) {
+            checkpoint++;
+            if(checkpoint > 1) {
+                check.innerHTML = "";
+            }
+
+            var derma =
+                ["가려움증","가려움증","가려움증","가려움증","가려움증","가려움증",
+                    "가려움증","가려움증","가려움증","가려움증","가려움증","가려움증",
+                    "가려움증","가려움증","가려움증","가려움증","가려움증","가려움증",
+                    "가려움증","가려움증","가려움증","가려움증","가려움증","가려움증",
+                    "가려움증","가려움증","가려움증","가려움증","가려움증","가려움증",]
+
+            var uro=
+                ["비교기과","비교기과","비교기과","비교기과","비교기과","비교기과",
+                    "비교기과","비교기과","비교기과","비교기과","비교기과","비교기과",
+                    "비교기과","비교기과","비교기과","비교기과","비교기과","비교기과",
+                    "비교기과","비교기과","비교기과","비교기과","비교기과","비교기과",
+                    "비교기과","비교기과","비교기과","비교기과","비교기과","비교기과",]
+
+            var eye=
+                ["안과","안과","안과","안과","안과","안과",
+                    "안과","안과","안과","안과","안과","안과",
+                    "안과","안과","안과","안과","안과","안과",
+                    "안과","안과","안과","안과","안과","안과",
+                    "안과","안과","안과","안과","안과","안과",]
+
+            var den=
+                ["치과","치과","치과","치과","치과","치과",
+                    "치과","치과","치과","치과","치과","치과",
+                    "치과","치과","치과","치과","치과","치과",
+                    "치과","치과","치과","치과","치과","치과",
+                    "치과","치과","치과","치과","치과","치과",]
+
+            var myDiv = document.getElementById("check");
+            var val =test.id;
+            switch (val){
+                case "dermatology":
+                    var list = document.getElementById('check');
+                    var input = "";
+                    for (var i = 1; i < 16; i++) {
+                        input += "<button  onclick='change(this)' style='margin-top: 0px;' class=\"btn\"  href=\"#\">";
+                        input += "<p style='text-align:center;padding-top: 15px; font-size: 15px;'>"+derma[i]+"</p>"
+                        input += "</button>";
+                        input +="\u00A0\u00A0\u00A0\u00A0"
+                        if(i % 5 == 0)
+                            input += "<br><br>";
+                    }
+
+                    list.innerHTML = input;
+                    break;
+
+                case "urology":
+                    var list = document.getElementById('check');
+                    var input = "";
+                    for (var i = 1; i < 16; i++) {
+                        input += "<button onclick='change(this)' style='margin-top: 0px;' class=\"btn\"  href=\"#\">";
+                        input += "<p style='text-align:center; padding-top: 15px;font-size: 15px;'>"+uro[i]+"</p>"
+                        input += "</button>";
+                        input +="\u00A0\u00A0\u00A0\u00A0"
+                        if(i % 5 == 0)
+                            input += "<br><br>";
+                    }
+                    list.innerHTML = input;
+                    break;
+
+                case "eyes":
+                    var list = document.getElementById('check');
+                    var input = "";
+                    for (var i = 1; i < 16; i++) {
+                        input += "<button onclick='change(this)' style='margin-top: 0px;' class=\"btn\"  href=\"#\">";
+                        input += "<p style='text-align:center; padding-top: 15px;font-size: 15px;'>"+eye[i]+"</p>"
+                        input += "</button>";
+                        input +="\u00A0\u00A0\u00A0\u00A0"
+                        if(i % 5 == 0)
+                            input += "<br><br>";
+                    }
+                    list.innerHTML = input;
+                    break;
+
+                case "dentist":
+                    var list = document.getElementById('check');
+                    var input = "";
+                    for (var i = 1; i < 16; i++) {
+                        input += "<button onclick='change(this)' style='margin-top: 0px;' class=\"btn\"  href=\"#\">";
+                        input += "<p style='text-align:center; padding-top: 15px; font-size: 15px;'>"+den[i]+"</p>"
+                        input += "</button>";
+                        input +="\u00A0\u00A0\u00A0\u00A0"
+                        if(i % 5 == 0)
+                            input += "<br><br>";
+                    }
+                    list.innerHTML = input;
+                    break;
+
+            }
+        }
+    </script>
+</div>
+
+<center><div id="checkList" style="font-size: 20px; font-family: monospace; font-weight: bold"></div></center>
+<center><button style="background-color: white; width: 300px" onclick=testing()><p style="color: #0092ff; font-size: 30px; margin-top: 5px;"><strong>분석하기</strong></p></button></center>
+
+<script type="text/javascript">
+    function testing() {
+        str = [];
+        for(var i = 1; i<checkList.length; i++) {
+            if(checkList[i] != null)
+            str.push("\u00A0\u00A0"+checkList[i]);
+        }
+        $("#checkList").text(str);
+        chart();
+    }
+</script>
+
+<script type="text/javascript">
+    function chart() {
+
+        var chart = new CanvasJS.Chart("chartContainer",
+            {
+                title:{
+                    text: "빅 데이터 분석 결과"
+                },
+                exportFileName: "Pie Chart",
+                exportEnabled: true,
+                animationEnabled: true,
+                legend:{
+                    verticalAlign: "bottom",
+                    horizontalAlign: "center"
+                },
+                data: [
+                    {
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "{name}: <strong>{y}%</strong>",
+                        indexLabel: "{name} {y}%",
+                        dataPoints: [
+                            {  y: 80, name: "아토피", exploded: true},
+                            {  y: 5, name: "알레르기 반응"},
+                            {  y: 15, name: "습진"},
+                        ]
+                    }
+                ]
+            });
+        chart.render();
+        var con = document.getElementById("disease");
+        con.style.display = 'block';
+    }
+</script>
+
+<div id="disease" style="display: none; background-color: #FFFFFF; padding-top:50px; margin-top:50px;" >
+
+    <div id="chart" style="flex-direction: column; flex: 1; padding-left:160px;">
+        <div id="chartContainer" style="height: 300px; float: left; width: 50%"></div>
+        <div style=" height: 400px; float: left; width: 50%">
+            <center><Text style="font-size: 15px; color: #0b0b0b;">
+                <p style="font-size: 70px"><br><strong>80%</strong></p>
+                <p style="font-size: 30px; margin-top: 50px;">분석결과 <strong style="color: #0092ff">아토피</strong>가 의심됩니다.</p>
+            </Text>
+            </center>
+        </div>
     </div>
 
-    <div id="hr"></div>
+    <center><Text style="font-size: 30px; font-family: 'Teko', sans-serif">분석결과 <strong>아토피</strong>의 가능성이 높습니다.</Text></center>
+    <hr class="primary"/>
 
-    <div id="hospital_button_div">
-      <button type="button" name="button">피부과</button>
-      <button type="button" name="button">비뇨기과</button>
-      <button type="button" name="button">안과</button>
-      <button type="button" name="button">치과</button>
+    <div class="panel panel-primary" align="center" style="height: 500px; color:white; font-size: 35px ; font-family: 'Open Sans', sans-serif; background-color:#0092ff">
+      <p style="font-size:40px; padding-top:30px;">아토피란?</p>
+        <center><Text style="padding-left:150px; float: left; width: 50%; height: 300px; text-align:left; font-size: 20px; color: #FFFFFF;">
+            <br><br><br>
+            말 그대로 다양한 원인이 복잡하게 뒤엉켜 발병하고 완화 개발을 반복한다.<br>
+            원인이 복잡하고 다양하는 것은 그만큼 치료가 어렵다는 것을 뜻한다. 아토피<br>
+            소인에 의한 알레르기 질환으로 알레르기 피부염, 알레르기성비염, 천식, <br>
+            알레르기성 결막염, 아토피성 두드러기 등이 있으며 이들 질환은 단독 또는 <br>
+            여러 질환이 동시에 나타날 수 있다.<br>
+        </Text></center>
+        <br>
+        <center>
+          <div style="float:left; width:800px; height:250px; background-color:white; margin-left:60px; padding-top:24px; padding-left:24px;">
+          <img style="float: left; width: 250px; height: 200px;" src="./img/info1.jpg">
+          <img style="float: left; width: 250px; height: 200px; padding-left:24px;" src="./img/info2.jpg">
+          <img style="float: left; width: 250px; height: 200px; padding-left:24px;" src="./img/info3.jpg">
+        </div>
+        </center>
     </div>
 
-    <div id="check">
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
-      <div><input type="checkbox">가려움증</input></div>
+
+    <div align="center" style="font-size: 30px ; font-family: 'Open Sans', sans-serif; background-color: white; padding-top:20px;">
+        <p style="font-size: 40px; color: #0092ff"><strong>아토피를 낫게 하려면?</strong></p>
     </div>
 
-        <!-- <footer>
-              <div class="container" style="font-family:Arial;">
-                  <div class="row">
-                      <div class="col-lg-10 col-lg-offset-1 text-center">
-                          <p style="font-size:18px"><strong>Wonderful Guys</strong>
-                          </p>
-                          <ul class="list-unstyled" style="font-size:15px;">
-                              <li><i class="fa fa-phone fa-fw"></i> 010-3310-6513</li>
-                              <li><i class="fa fa-envelope-o fa-fw"></i>Dr.dream@WonderfulGuys.com</li>
-                          </ul>
-                          <br>
-                          <ul class="list-inline">
-                              <li>
-                                  <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                              </li>
-                              <li>
-                                  <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                              </li>
-                          </ul>
-                          <hr class="small">
-                          <p class="text-muted" style="font-size:15px;">&copy; 2017, Wonderful Guys</p>
-                      </div>
-                  </div>
-              </div>
-              <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-          </footer> -->
+    <center><table border="3" style="width:80%; border-bottom:hidden; border-left: hidden; border-top-color: #0092ff ; border-right: hidden;  " summary="">
 
-      <!-- jQuery -->
-      <script src="vendor/jquery/jquery.min.js"></script>
+        <tr>
+            <th style="width: 10%;"><br><br><br><center><p style="">식이요법</p></center><br><br><br></th>
+            <td>
+                <center><p style="">녹황색야채, 과일, 율무, 조, 현미, 찹쌀, 녹두, 우엉, 가지, 다시마, 미역, 김, 고구마, 감자, 마, 밤, 표고버섯, 대추, 포도, 검은깨, 토마토</p></center>
+            </td>
+        </tr>
 
-      <!-- Bootstrap Core JavaScript -->
-      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    </table>
+    </center>
+    <center><table border="3" style="width:80%; border-bottom:hidden; border-left: hidden; border-top-color: #0092ff ; border-right: hidden;  " summary="">
 
-      <!-- Plugin JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-      <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-      <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <tr>
+            <th style="width: 10%"><br><br><br><center><p style="">주의해야 할 음식</p></center><br><br><br></th>
+            <td>
+                <center><p style="">우유, 유제품, 달걀, 쵸콜릿, 오징어, 낙지, 고등어, 새우, 게, 홍합, 튀김류, 꿀, 견과류(호두, 잣, 땅콩), 밀가루음식(과자, 빵), 인스턴트음식(라면, 피자, 햄)</p></center>
+            </td>
+        </tr>
 
-      <!-- Theme JavaScript -->
-      <script src="js/creative.min.js"></script>
+    </table>
+    </center>
+    <center><table border="3" style="width:80%;border-bottom-color: #0092ff; border-left: hidden; border-top-color: #0092ff ; border-right: hidden;  " summary="">
+        <th style="width: 10%"><br><br><br><center><p style="">좋은 습관</p></center><br><br><br></th>
+            <td>
+                <center><p style="text-align:left; padding-left:30px;"><br>
+                    1. 집안의 적정온도와 습도를 유지하기 => 여름철의 경우 실내온도 25도 습도 50%가 적당하며, 겨울철의 경우 실내온도 18~21도 습도 50~60%를 유지하는 것이 좋다.<br><br>
+                    2. 집을 깨끗이 청소하고 실내를 수시로 환기하기 => 집먼지 진드기는 알레르기성 피부질환과 호흡기 질환을 유발시키는 가장 큰 원인이므로 집의 구석구석까지 청소하는 것이 필요하다.<br><br>
+                    3. 땀을 잘 흡수하고 통기성이 좋은 옷을 입기 => 더운 여름에는 땀에 젖은 옷이 피부를 자극하여 가려움을 유발한다. 합성섬유로 된 옷을 피하고 통기성이 좋은 옷을 택하는 것이 좋다.<br><br>
+                    4. 적당한 운동으로 노폐물을 배출하기 => 운동을 하면서 흘리는 땀을 통해 아토피를 유발하는 체내 노폐물과 독소가 함께 배출된다. 단! 지나친 운동으로 인한 땀은 역효과를 가져온다.<br><br>
+                    5. 피부 청결을 유지하고 자외선 차단체를 바르기 => 외출 후에는 샤워나 목욕을 통하여 먼지와 노폐물을 씻어준다. 또한 보습제를 사용하여 피부를 보호하는 것이 바람직하다.<br><br>
+                </p></center>
+            </td>
+        </tr>
 
-  </body>
-  </html>
+    </table>
+    </center>
+<br><br><br><br>
+</div>
+
+
+
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>
+    function change(id) {
+        id.style.backgroundColor="#fcc500";
+    }
+</script>
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<!-- Theme JavaScript -->
+<script src="js/creative.min.js"></script>
+
+</body>
+</html>
